@@ -330,7 +330,7 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
 .fdish-3{grid-template-columns:repeat(3,1fr)}
 .fdish-4{grid-template-columns:repeat(4,1fr)}
 .fdish-wrap{position:relative;overflow:hidden;height:220px}
-.fdish-1 .fdish-wrap{height:240px}
+.fdish-1 .fdish-wrap{height:280px;max-width:520px}
 .fdish-img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease;display:block}
 .fdish-ph{width:100%;height:100%;background:var(--red-pale);align-items:center;justify-content:center}
 .fdish-wrap:hover .fdish-img{transform:scale(1.06)}
@@ -338,7 +338,7 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
 @media(max-width:640px){
   .fdish-3,.fdish-4{grid-template-columns:repeat(2,1fr)}
   .fdish-wrap{height:160px}
-  .fdish-1 .fdish-wrap{height:180px;max-width:100%}
+  .fdish-1 .fdish-wrap{height:220px;max-width:100%}
   .gitem{height:180px!important}
   .gal-mosaic{gap:6px}
 }
@@ -352,7 +352,8 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
   .gitem{height:160px!important}
   .gal-mosaic{grid-template-columns:1fr 1fr;gap:6px}
   .gitem:nth-child(1){grid-column:span 2}
-  .fdish-wrap,.fdish-1 .fdish-wrap{height:150px!important;max-width:100%}
+  .fdish-wrap{height:150px!important}
+  .fdish-1 .fdish-wrap{height:180px!important;max-width:100%}
   [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
 }
 </style>
@@ -559,7 +560,7 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
     <div class="mpanel" id="cat-soups">
       <div class="panel-title">Супы</div>
       <div class="fdish-grid fdish-1"><div class="fdish-wrap">
-          <img src="images/sup_chechevica.PNG" alt="Крем-суп из чечевицы" class="fdish-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <img src="images/sup_chechevica.PNG" alt="Крем-суп из чечевицы" class="fdish-img" style="object-position:center 55%" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="fdish-ph" style="display:none"><span class="phl">sup_chechevica.PNG</span></div>
           <div class="fdish-lbl">Крем-суп из чечевицы</div>
         </div></div>
@@ -583,7 +584,7 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
     <div class="mpanel" id="cat-pasta">
       <div class="panel-title">Пасты</div>
       <div class="fdish-grid fdish-1"><div class="fdish-wrap">
-          <img src="images/fetuchiniskuricey.PNG" alt="Ригатони с курицей" class="fdish-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <img src="images/fetuchiniskuricey.PNG" alt="Ригатони с курицей" class="fdish-img" style="object-position:center 50%" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="fdish-ph" style="display:none"><span class="phl">fetuchiniskuricey.PNG</span></div>
           <div class="fdish-lbl">Ригатони с курицей</div>
         </div></div>
@@ -740,7 +741,7 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
     <div class="mpanel" id="cat-grill">
       <div class="panel-title">Шашлыки</div>
       <div class="fdish-grid fdish-1"><div class="fdish-wrap">
-          <img src="images/shashlyk.PNG" alt="Шашлык на углях" class="fdish-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <img src="images/shashlyk.PNG" alt="Шашлык на углях" class="fdish-img" style="object-position:center 80%" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="fdish-ph" style="display:none"><span class="phl">shashlyk.PNG</span></div>
           <div class="fdish-lbl">Шашлык на углях</div>
         </div></div>
@@ -791,7 +792,7 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
         <div class="mitem"><div class="mitem-left"><div class="mitem-name">Хычины с мясом</div></div><div class="mitem-price">2 790 ₸</div></div>
       </div>
       <div class="msub">Хачапури</div>
-      <div class="fdish-grid fdish-1"><div class="fdish-wrap"><img src="images/hachapuri.PNG" alt="Хачапури" class="fdish-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="fdish-ph" style="display:none"><span class="phl">hachapuri.PNG</span></div><div class="fdish-lbl">Хачапури</div></div></div>
+      <div class="fdish-grid fdish-1"><div class="fdish-wrap"><img src="images/hachapuri.PNG" alt="Хачапури" class="fdish-img" style="object-position:center 50%" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="fdish-ph" style="display:none"><span class="phl">hachapuri.PNG</span></div><div class="fdish-lbl">Хачапури</div></div></div>
       <div class="mitems">
         <div class="mitem"><div class="mitem-left"><div class="mitem-name">Хачапури по-мегрельски</div></div><div class="mitem-price">2 890 ₸</div></div>
         <div class="mitem"><div class="mitem-left"><div class="mitem-name">Хачапури по-имеретински</div></div><div class="mitem-price">2 890 ₸</div></div>
@@ -814,7 +815,6 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
     <!-- ВЫПЕЧКА -->
     <div class="mpanel" id="cat-bakery">
       <div class="panel-title">Выпечка & Хлеб</div>
-      <div class="fdish-grid fdish-1"><div class="fdish-wrap" style="height:280px;max-width:560px"><img src="images/chesnok_baget.PNG" alt="Горячий чесночный хлеб" class="fdish-img" style="object-position:center 60%" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="fdish-ph" style="display:none"><span class="phl">chesnok_baget.PNG</span></div><div class="fdish-lbl">Горячий чесночный хлеб</div></div></div>
       <div class="msub">Выпечка</div>
       <div class="mitems">
         <div class="mitem"><div class="mitem-left"><div class="mitem-name">Самса с говядиной</div></div><div class="mitem-price">690 ₸</div></div>
@@ -834,7 +834,7 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
     <!-- ПИВО -->
     <div class="mpanel" id="cat-beer">
       <div class="panel-title">Пиво & Закуски к пиву</div>
-      <div class="fdish-grid fdish-1"><div class="fdish-wrap"><img src="images/pivo_1.PNG" alt="Пиво" class="fdish-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="fdish-ph" style="display:none"><span class="phl">pivo_1.PNG</span></div><div class="fdish-lbl">Свежее пиво</div></div></div>
+      <div class="fdish-grid fdish-1"><div class="fdish-wrap"><img src="images/pivo_1.PNG" alt="Пиво" class="fdish-img" style="object-position:center 45%" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="fdish-ph" style="display:none"><span class="phl">pivo_1.PNG</span></div><div class="fdish-lbl">Свежее пиво</div></div></div>
       <div class="msub">Пиво бутылочное</div>
       <div class="mitems">
         <div class="mitem"><div class="mitem-left"><div class="mitem-name">Кружка свежего 0.5</div></div><div class="mitem-price">990 ₸</div></div>
@@ -974,8 +974,8 @@ footer{background:var(--dark);border-top:1px solid var(--border)}
         <div class="drink-item"><span class="drink-name">Детский сок 0.2</span><span class="drink-price">650 ₸</span></div>
       </div>
       <div class="msub">Молочные коктейли</div>
-      <div class="fdish-grid fdish-1"><div class="fdish-wrap">
-          <img src="images/milkcocteil.PNG" alt="Молочные коктейли" class="fdish-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="fdish-grid fdish-1"><div class="fdish-wrap" style="height:380px;background:var(--white)">
+          <img src="images/milkcocteil.PNG" alt="Молочные коктейли" class="fdish-img" style="object-fit:contain;object-position:center center;background:var(--white)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="fdish-ph" style="display:none"><span class="phl">milkcocteil.PNG</span></div>
           <div class="fdish-lbl">Молочные коктейли</div>
         </div></div>
